@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 5.0.1
+- https://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Aug 27, 2020 at 04:29 PM
+- Server version: 10.4.11-MariaDB
+- PHP Version: 7.2.27
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="https://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="asusemployee" collation="utf8mb4_general_ci" charset="utf8mb4">
+            <pma:table name="employees">
+                CREATE TABLE `employees` (
+                  `ID` int(11) NOT NULL AUTO_INCREMENT,
+                  `Name` varchar(30) NOT NULL,
+                  `E-mail` varchar(100) NOT NULL,
+                  `Phone` int(11) NOT NULL,
+                  `Salary` int(10) NOT NULL,
+                  `Address` text NOT NULL,
+                  PRIMARY KEY (`ID`)
+                ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'asusemployee'
+    -->
+    <database name="asusemployee">
+        <!-- Table employees -->
+        <table name="employees">
+            <column name="ID">4</column>
+            <column name="Name">           md    Jack Jhonson </column>
+            <column name="E-mail">mdjhonsonthejack@gmail.com</column>
+            <column name="Phone">987636420</column>
+            <column name="Salary">50000</column>
+            <column name="Address">               143 Main St. New York</column>
+        </table>
+        <table name="employees">
+            <column name="ID">5</column>
+            <column name="Name">Tom Cruise </column>
+            <column name="E-mail">tomisimpossible@gmail.com</column>
+            <column name="Phone">90004001</column>
+            <column name="Salary">120000</column>
+            <column name="Address">12 St. Hollywood</column>
+        </table>
+        <table name="employees">
+            <column name="ID">6</column>
+            <column name="Name">jimmy</column>
+            <column name="E-mail">jimmythegem@gmail.com</column>
+            <column name="Phone">22222222</column>
+            <column name="Salary">300000</column>
+            <column name="Address">at your place</column>
+        </table>
+        <table name="employees">
+            <column name="ID">7</column>
+            <column name="Name">Jonbon Haque</column>
+            <column name="E-mail">itsyourboyjondon@gmail.com</column>
+            <column name="Phone">11223344</column>
+            <column name="Salary">121212</column>
+            <column name="Address">In my place</column>
+        </table>
+        <table name="employees">
+            <column name="ID">8</column>
+            <column name="Name">Md. Jahangir Hossain</column>
+            <column name="E-mail">jahangir.hossain01932@gmail.com</column>
+            <column name="Phone">1534799666</column>
+            <column name="Salary">1</column>
+            <column name="Address">Dhaka-1230</column>
+        </table>
+    </database>
+</pma_xml_export>
